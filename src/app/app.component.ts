@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppService } from './app.service';
+import { Author } from './author';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Book App';
+  author: Author;
+
+  constructor(private appService: AppService) {}
+
+  ngOnInit() {
+  	this.appService.getData().subscribe((data: Author) => {
+  		this.author = data;
+  	});
+  }
 }
