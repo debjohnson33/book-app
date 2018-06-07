@@ -16,7 +16,8 @@ export class AppComponent {
 
   ngOnInit() {
   	this.appService.getData().subscribe((data: Author) => {
-  		this.author = data;
+  		this.author = data.data;
+      console.log(this.author);
   	});
   }
 }

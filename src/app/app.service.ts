@@ -11,14 +11,6 @@ export class AppService {
 	constructor(private http: HttpClient) {}
 
 	getData() {
-		return this.http.get('https://s3.amazonaws.com/api-fun/books.json')
-			.pipe(map((response: HttpResponse<any>) => {
-				const result = response.json().data;
-				const author = new Author(
-					result.name,
-					result.birthday,
-					result.birthPlace
-				)
-			}))
+		return this.http.get('https://s3.amazonaws.com/api-fun/books.json');
 	}
 }

@@ -1,11 +1,6 @@
-export class Author {
-	name: string;
-	birthday: string;
-	birthPlace: string;
+export interface Author {
+	author: String;
+	birthday: String;
+	birthPlace: String;
 
-	constructor(name: string, birthday: string, birthPlace: string) {
-		this.name = name;
-		this.birthday = birthday;
-		this.birthPlace = birthPlace;
-	}
 }
