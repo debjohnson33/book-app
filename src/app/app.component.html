@@ -8,7 +8,7 @@
 <h2>Author: </h2>
 <ul>
   <li>
-    <h2>{{ author.author }}</h2>
+    <h2>{{ author.name }}</h2>
   </li>
   <li>
     <h2>{{ author.birthday }}</h2>
@@ -18,3 +18,8 @@
   </li>
 </ul>
 
+<div *ngFor="let book of books"> 
+  <a href={{book.purchaseLink}}><p>{{ book.title }}</p></a>
+  <p>{{ book.PublishDate }}</p>
+  <img src="{{ book.imageUrl }}" alt="book cover">
+</div>
