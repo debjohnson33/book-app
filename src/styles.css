@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 .author {
-	list-style-type: none;	
+	list-style-type: none;
 }
 
-img {
+h2 {
+	padding-left: 15px;
+}
+
+img, a, p {
 	padding: 10px;
 }
