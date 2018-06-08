@@ -32,8 +32,7 @@ export class AppComponent {
             )
         );
       }
-      this.books = transformedBooks; 
-      console.log(this.books);   
+      this.books = transformedBooks;  
   	});
   }
 }
