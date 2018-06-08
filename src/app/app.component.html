@@ -22,6 +22,12 @@
   </div>
 
   <div class="row">
+    <button class="btn" type="submit" (click)="alphaSort()">Sort Alphabetically by Title</button>
+    <button class="btn type
+    submit" (click)="dateSort()">Sort by Publish Date</button>
+  </div>
+
+  <div class="row">
     <div class="col-md-6" *ngFor="let book of books">
       <div class="card m-sm-1" style="width: 22rem; background-color: #DEBE8E">
         <img class="card-img-top"src="{{ book.imageUrl }}" alt="book cover">
