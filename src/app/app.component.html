@@ -1,24 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1> 
-</div>
+<div class="container-fluid"> 
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1> 
+  </div>
+  
+  <div class="author">
+    <h2>Author: </h2>
+    <ul>
+      <li>
+        <p>Name: {{ author.name }}</p>
+      </li>
+      <li>
+        <p>Birthday: {{ author.birthday }}</p>
+      </li>
+      <li>
+        <p>Birth Place: {{ author.birthPlace }}</p>
+      </li>
+    </ul>
+  </div>
 
-<h2>Author: </h2>
-<ul class="author">
-  <li>
-    <p>Name: {{ author.name }}</p>
-  </li>
-  <li>
-    <p>Birthday: {{ author.birthday }}</p>
-  </li>
-  <li>
-    <p>Birth Place: {{ author.birthPlace }}</p>
-  </li>
-</ul>
-
-<div class="container">
   <div class="row">
     <div class="col-md-6" *ngFor="let book of books">
       <div class="card m-sm-1" style="width: 22rem; background-color: #DEBE8E">
