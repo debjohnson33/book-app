@@ -5,10 +5,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
+import { AuthorComponent } from './author.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthorComponent
   ],
   imports: [
     BrowserModule,

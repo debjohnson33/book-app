@@ -5,21 +5,8 @@
       Welcome to {{ title }}!
     </h1> 
   </div>
-  
-  <div class="author">
-    <h2>Author: </h2>
-    <ul class="author">
-      <li>
-        <p>Name: {{ author.author }}</p>
-      </li>
-      <li>
-        <p>Birthday: {{ author.birthday }}</p>
-      </li>
-      <li>
-        <p>Birth Place: {{ author.birthPlace }}</p>
-      </li>
-    </ul>
-  </div>
+
+  <app-author></app-author>
 
   <div class="row">
     <button class="btn btn-warning" type="submit" (click)="alphaSort()">Sort Alphabetically by Title</button>
