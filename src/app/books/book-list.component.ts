@@ -16,20 +16,19 @@ export class BookListComponent {
 
   ngOnInit() {
   	this.appService.getData().subscribe((data: Author) => {
-  	  //this.author = data.data;
-      console.log(this.books);
-      // this.author.books = this.author.books;
-      // let transformedBooks: Book[] = [];
-      // for (let book of this.author.books) {
-      //   transformedBooks.push(new Book(
-      //       book.title,
-      //       book.PublishDate,
-      //       book.purchaseLink,
-      //       book.imageUrl
-      //       )
-      //   );
-      // }
-      // this.books = transformedBooks;  
+  	  this.author = data.data;
+      this.author.books = this.author.books;
+      let transformedBooks: Book[] = [];
+      for (let book of this.author.books) {
+        transformedBooks.push(new Book(
+            book.title,
+            book.PublishDate,
+            book.purchaseLink,
+            book.imageUrl
+            )
+        );
+      }
+      this.books = transformedBooks;  
   	});
   }
 
